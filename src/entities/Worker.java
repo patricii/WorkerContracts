@@ -49,13 +49,22 @@ public class Worker {
 		this.baseSalary = baseSalary;
 	}
 
-	@Override
-	public String toString() {
-		return "Worker [name: " + name + ", Job Grade: " + level + ", Salary: " + baseSalary + "]";
+	public Department getDepartment() {
+		return department;
 	}
 
-	public void AddContract() {
-
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
+
+	public List<HourContract> getContracts() {
+		return contracts;
+	}
+
+	public void setContracts(List<HourContract> contracts) {
+		this.contracts = contracts;
+	}
+
+	
 
 }
